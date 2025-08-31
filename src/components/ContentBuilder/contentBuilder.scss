@@ -1,0 +1,14 @@
+.content-builder {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  h1 {
+    margin: 0;
+  }
+  li, p {
+    margin: 15px 0;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/emmanuelalabi/Desktop/peth/pensphere/src/Landing/Components/Personal/PFAList/index.tsx"],"sourcesContent":["import { PFALogos } from \"../../../../assets\"\n\nconst PFAList = () => {\n  return (\n    <section className=\"w-screen min-w-[80vw] flex flex-wrap items-center py-5 justify-around sm:justify-start\" id=\"pfas\">\n      {\n        PFALogos.map((pfa) => {\n          return (\n            <div key={pfa} className=\"w-[30%] sm:w-[25%] md:w-[20%] flex justify-center items-center my-[20px]\">\n              <img src={pfa} alt=\"\" className=\"w-[150px]\" loading=\"lazy\" />\n            </div>\n          )\n        })\n      }\n    </section>\n  )\n}\n\nexport default PFAList"],"names":[],"mappings":";;;;;AAAA;;;AAEA,MAAM,UAAU;IACd,qBACE,8OAAC;QAAQ,WAAU;QAAyF,IAAG;kBAE3G,mIAAQ,CAAC,GAAG,CAAC,CAAC;YACZ,qBACE,8OAAC;gBAAc,WAAU;0BACvB,cAAA,8OAAC;oBAAI,KAAK;oBAAK,KAAI;oBAAG,WAAU;oBAAY,SAAQ;;;;;;eAD5C;;;;;QAId;;;;;;AAIR;uCAEe","debugId":null}}]
+}
