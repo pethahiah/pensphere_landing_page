@@ -24,28 +24,32 @@ const guides = [
   //   videoLink: "https://www.youtube.com/embed/-OAeg1IMZOg?si=Ykbewoyc_-Oc5gLP"
   // },
   {
-    title: "How To Manage Your Payment Methods.",
+    title: "How To Manage Your Wallet Payment Method.",
     videoLink: "https://www.youtube.com/embed/hfWYI9z-Tzk?si=pVy95HR0vBRc2fP0"
   },
   {
     title: "How to make a pension remittance using the 'Wallet' payment method.",
     videoLink: "https://www.youtube.com/embed/oIhOB6CP1XI?si=JC2cmsve8buKa7jX"
   },
-  {
-    title: "How to make a pension remittance using the 'Direct Debit' payment method.",
-    videoLink: "https://www.youtube.com/embed/v7S_gblTlw8?si=VCQ9l2gy9o6bpAD9"
-  },
+  // {
+  //   title: "How to make a pension remittance using the 'Direct Debit' payment method.",
+  //   videoLink: "https://www.youtube.com/embed/v7S_gblTlw8?si=VCQ9l2gy9o6bpAD9"
+  // },
   {
     title: "How to make a pension remittance using the 'Cheque Deposit' payment method.",
     videoLink: "https://www.youtube.com/embed/8bEJAtfiJuk?si=uchsuo1MnHsEHbpN"
   },
-  {
-    title: "How to make a pension remittance using the 'Card' payment method.",
-    videoLink: "https://www.youtube.com/embed/KmS9vk6I60Q?si=J61-n2Pzy007QXjw"
-  },
+  // {
+  //   title: "How to make a pension remittance using the 'Card' payment method.",
+  //   videoLink: "https://www.youtube.com/embed/KmS9vk6I60Q?si=J61-n2Pzy007QXjw"
+  // },
   {
     title: "How to manage PFC dashboard.",
     videoLink: "https://www.youtube.com/embed/L9gnemKSJrw?si=SyQV8pJ6YMhD9ife"
+  },
+  {
+    title: "How to configure application settings.",
+    videoLink: "https://www.youtube.com/embed/XGLTRJfExXA?si=D66JzR8roWVfkou9"
   },
 ]
 const HowItWorks = () => {
