@@ -1,11 +1,8 @@
 'use client'
 import { WhiteLogo } from '../../../../components/Logo';
 // import './footer.scss';
-import { NavLink } from 'react-router-dom';
-import { NavHashLink } from 'react-router-hash-link';
 import { FormEvent, useState } from 'react';
 import { trackAction } from '../../../../utils/tracker';
-import { Link } from 'react-router-dom';
 import { documents, icons } from '../../../../assets';
 import { usePathname, useRouter } from 'next/navigation';
 import Button from '@/components/Button';

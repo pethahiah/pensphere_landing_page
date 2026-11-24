@@ -3,16 +3,16 @@ import { useEffect } from "react";
 import ContentBuilder from "../../components/ContentBuilder";
 import privacy from "../../data/privacy";
 import { scrollUp } from "../../utils/common";
-import { useLocation } from "react-router-dom";
+import { usePathname } from "next/navigation";
 
 
 const Privacy = () => {
-  const {pathname, hash} = useLocation();
+  const pathname = usePathname();
   useEffect(() => {
-    if (pathname && !hash) {
+    if (pathname && !window.location.hash) {
       scrollUp();
     }
-  }, [hash, pathname]);
+  }, [pathname]);
   return (
     <ContentBuilder data={privacy} />
   );

@@ -1,5 +1,5 @@
 'use client'
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { scrollUp } from "../../utils/common";
 import Button from "../../components/Button";
 import { documents, heroImages, icons } from "../../assets";
@@ -54,15 +54,19 @@ const guides = [
 ]
 const HowItWorks = () => {
   const pathname = usePathname();
-  const hash = window?.location.hash
+  const [hash, setHash] = useState('');
 
-  const normalHash = hash?.replace(/%20/g, ' ')
+  const normalHash = hash.replace(/%20/g, ' ');
 
   useEffect(() => {
-    if (pathname && !hash) {
+    const updateHash = () => setHash(window.location.hash);
+    updateHash();
+    if (pathname && !window.location.hash) {
       scrollUp();
     }
-  }, [hash, pathname]);
+    window.addEventListener('hashchange', updateHash);
+    return () => window.removeEventListener('hashchange', updateHash);
+  }, [pathname]);
 
   return (
     <div className="w-full mb-40">
