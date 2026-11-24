@@ -90,12 +90,12 @@ const ContactUsNew = () => {
                                 <p className="text-base font-medium my-1">{typ.type}</p>
                                 <p className="text-sm font-normal my-1">{typ.detail}</p>
                                 <div className="flex flex-row gap-2">
-                                    <a href={typ.link} className="text-sm font-normal underline text-[#0898A0] my-1 max-w-[250px] text-left cursor-pointer">{typ.value}</a>
+                                    <a href={typ.link} className="text-sm font-normal underline text-az-teal my-1 max-w-[250px] text-left cursor-pointer">{typ.value}</a>
                                     {
                                         typ.orValue && (
                                             <>
                                             <span>or</span>
-                                            <a href={typ.orLink} className="text-sm font-normal underline text-[#0898A0] my-1 max-w-[250px] text-left cursor-pointer">{typ.orValue}</a>
+                                            <a href={typ.orLink} className="text-sm font-normal underline text-az-teal my-1 max-w-[250px] text-left cursor-pointer">{typ.orValue}</a>
                                             </>
                                         )
                                     }
@@ -136,7 +136,7 @@ const ContactUsNew = () => {
                         <textarea onChange={({ target }) => handleDataChange('message', target.value)} value={data.message} className="border w-full border-width border-gray-[#DDDDDD] h-24 rounded-md m-0 mb-0 resize-none p-4" name="" id="" cols={30} rows={10} placeholder="Write your message here....." required></textarea>
                     </div>
                 </div>
-                <button disabled={loading} className="border border-black bg-[#0898A0] text-white w-52 h-10 rounded font-medium text-base font-Onest mt-10 flex flex-row justify-around items-center" type="submit">{loading ? 'Loading' : 'Submit message'} <img src={icons.ArrowRightWhite} alt="" /></button>
+                <button disabled={loading} className="bg-az-teal text-white w-52 h-10 rounded font-medium text-base font-Onest mt-10 flex flex-row justify-around items-center" type="submit">{loading ? 'Loading' : 'Submit message'} <img src={icons.ArrowRightWhite} alt="" /></button>
             </form>
         </div>
     )
