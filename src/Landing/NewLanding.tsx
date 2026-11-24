@@ -1,6 +1,5 @@
 'use client'
 import { lazy, Suspense } from "react";
-import { useLocation } from "react-router-dom";
 import { scrollUp } from "../utils/common";
 import Hero from "./Components/Personal/Hero";
 import PageLoader from "../components/PageLoader";

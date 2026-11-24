@@ -15,7 +15,6 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-ga4": "^2.1.0",
-    "react-router-hash-link": "^2.4.3",
     "react-share": "^5.2.2"
   },
   "devDependencies": {
@@ -24,7 +23,6 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/react-router-hash-link": "^2.4.9",
     "eslint": "^9",
     "eslint-config-next": "15.5.0",
     "tailwindcss": "^4",
