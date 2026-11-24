@@ -55,7 +55,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 2rem;
   color: white;
   flex: 1;
   flex-wrap: wrap;
@@ -114,7 +115,7 @@ body {
 .new-footer .top .links,
 .new-footer .top .resources,
 .new-footer .top .home {
-  height: 200px;
+  min-height: 200px;
 }
 
 @media (max-width: 768px) {
@@ -171,8 +172,10 @@ body {
 
 .new-footer .bottom .brand {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
+  gap: 0.5rem;
 }
 
 .new-footer .bottom .brand p {
@@ -252,7 +255,7 @@ body {
  
 }
 
-.content-builder h1 {
+.content-builder h1, .content-builder .content-builder-title {
     margin: 0;
   }
 .content-builder li, .content-builder p {

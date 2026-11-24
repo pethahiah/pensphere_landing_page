@@ -5,6 +5,7 @@ import { FormEvent, useState } from 'react';
 import { trackAction } from '../../../../utils/tracker';
 import { documents, icons } from '../../../../assets';
 import { usePathname } from 'next/navigation';
+import { site } from '@/data/site';
 
 const socials = [
   {
@@ -90,6 +91,12 @@ const Footer = () => {
           <p className='text-sm font-normal mb-5 lg:mb-0 w-[290px]'>
             Unlock Efficiency, Accuracy, and Security with Our Cutting-Edge Remittance Platform.
           </p>
+          <address className='not-italic text-[#FFFFFFB2] text-[14px] font-normal space-y-1 mt-4 w-[290px]'>
+            <p className='text-white font-medium'>{site.company.legalName}</p>
+            <p>{site.company.streetAddress}, {site.company.locality}, {site.company.region}.</p>
+            <p><a href={site.company.phoneLink}>{site.company.phone}</a></p>
+            <p><a href={`mailto:${site.company.email}`}>{site.company.email}</a></p>
+          </address>
         </div>
         <div className="home section">
           <h5 className='text-white text-[16px] font-medium'>Home</h5>
@@ -103,7 +110,7 @@ const Footer = () => {
         <div className="resources section">
           <h5 className='text-white text-[16px] font-medium'>Resources</h5>
           <ul className='text-[#FFFFFFB2] text-[14px] font-normal space-y-2 mt-4'>
-            <li><a href={documents.privacy_doc} target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
             <li><a href="/useragreement">User Agreement</a></li>
             <li><a href="/terms">Terms & Conditions</a></li>
             <li><a href={documents.user_manual} target='_blank' rel="noopener noreferrer">User Manual</a></li>
@@ -119,9 +126,14 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="bottom h-fit border border-transparent border-t-[#FFFFFF4D] pt-14">
+      <div className="bottom h-fit border border-transparent border-t-[#FFFFFF4D] pt-10 gap-6">
         <div className='brand'>
-          <p className='text-base font-normal mb-5 lg:mb-0'>Pethahiah Rehoboth &copy; {new Date().getFullYear()}</p>
+          <p className='text-base font-normal'>{site.company.legalName} &copy; {new Date().getFullYear()}</p>
+          <p className='!text-sm font-normal !text-[#FFFFFFB2] leading-relaxed max-w-[560px]'>
+            PenSphere (a subsidiary of PayThru) is a{' '}
+            <a href={site.pencomPsspList} target="_blank" rel="noopener noreferrer" className='text-az-teal underline underline-offset-2 hover:text-white transition-colors'>PenCom-approved Payment Solution Service Provider</a>
+            {' '}on the Pension Contribution Remittance System.
+          </p>
         </div>
         <div className="s-media">
           {

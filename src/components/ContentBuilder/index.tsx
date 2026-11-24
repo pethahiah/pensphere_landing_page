@@ -1,10 +1,12 @@
 
-const ContentBuilder = ({data}: any) => {
+const ContentBuilder = ({data, titleAs = 'h1'}: any) => {
+  // Pages that stack several ContentBuilders pass titleAs="h2" so each page keeps a single H1.
+  const Title = titleAs;
   return (
     <div className="content-builder">
-      <h1 className='mt-10'>
+      <Title className='content-builder-title mt-10'>
         {data.title}
-      </h1>
+      </Title>
       <div>
         {
           data.details.map((detail: any, index: any) => (

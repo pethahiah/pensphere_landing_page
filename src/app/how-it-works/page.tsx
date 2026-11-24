@@ -67,9 +67,9 @@ const HowItWorks = () => {
       <div className="w-full p-[6%] flex flex-col md:flex-row gap-3  gap-y-20">
         <div className="flex-1 flex flex-col gap-10">
           <div className="px-5 flex flex-col items-start text-start">
-            <h1 className="text-black w-full font-bold lg:text-3xl text-[24px] font-Onest rounded-md ">
+            <h2 className="text-black w-full font-bold lg:text-3xl text-[24px] font-Onest rounded-md ">
               Simplify Your PenSphere Journey
-            </h1>
+            </h2>
             <p className="max-w-[600px] my-10">Watch these quick videos to explore our features step-by-step, and learn how to get the most out of PenSphere.</p>
             <p className="max-w-[600px]">You can also read our user manual.</p>
             <a href={documents.user_manual} target="__blank">

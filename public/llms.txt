@@ -1,0 +1,25 @@
+# PenSphere
+
+> PenSphere (a subsidiary of PayThru) is a pension remittance platform for Nigerian employers, approved by the National Pension Commission (PenCom) as a Payment Solution Service Provider (PSSP) on the Pension Contribution Remittance System (PCRS). It is operated by Pethahiah Rehoboth International Limited.
+
+Employers use PenSphere to upload monthly pension schedules, have employee PINs and Pension Fund Administrators (PFAs) validated before payment, and remit contributions to every PFA and Pension Fund Custodian (PFC) at once, with receipts for each remittance.
+
+- PenCom's list of approved PSSPs, which includes PenSphere: https://www.pencom.gov.ng/wp-content/uploads/2025/11/The-online-Pension-Contribution-Remittance-System-List-of-PSSPs-1-21-2.pdf
+- Register: https://pensphere.ng/register
+- Log in: https://pensphere.ng/login
+
+## Pages
+
+- [Home](https://pensphere.ng/): what PenSphere does, partner PFAs and custodians, FAQ
+- [How it works](https://pensphere.ng/how-it-works): video walkthroughs and the user manual
+- [Contact](https://pensphere.ng/contact): email, phone, WhatsApp and office address
+- [Privacy policy](https://pensphere.ng/privacy)
+- [Terms and conditions](https://pensphere.ng/terms)
+- [User agreement](https://pensphere.ng/useragreement)
+
+## Company
+
+- Legal name: Pethahiah Rehoboth International Limited
+- Address: All Seasons Plaza, 24 Lateef Jakande Road, Agidingbi, Ikeja, Lagos, Nigeria
+- Phone: +234 916 643 1626
+- Email: support@pethahiah.com
