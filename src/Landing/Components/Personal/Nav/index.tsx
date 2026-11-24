@@ -6,7 +6,6 @@ import Link from 'next/link'
 import Logo from '../../../../components/Logo';
 import { icons } from "../../../../assets";
 import { usePathname, useRouter } from "next/navigation";
-import Button from "@/components/Button";
 
 const Nav = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -50,7 +49,7 @@ const Nav = () => {
             <div className="flex flex-row items-center">
                 <ul className={`hidden xl:flex justify-between flex-row h-[50px]`} >
                     <li className={`flex flex-col justify-center text-[18px] mx-6 cursor-pointer font-Onest
-                        ${isActiveRoute('/') ? 'text-[#0898A0]' : "text-black"}
+                        ${isActiveRoute('/') ? 'text-az-teal' : "text-black"}
                         `}>
                         <Link
                             href={`/`}
@@ -60,7 +59,7 @@ const Nav = () => {
                         {isActiveRoute(`/`) && <ActiveLinkMarker />}
                     </li>
                     <li className={`flex flex-col justify-center text-[18px] mx-6 cursor-pointer font-Onest
-                        ${isActiveRoute('/contact') ? 'text-[#0898A0]' : "text-black"}
+                        ${isActiveRoute('/contact') ? 'text-az-teal' : "text-black"}
                         `}>
                         <Link
                             href={`/contact`}
@@ -70,7 +69,7 @@ const Nav = () => {
                         {isActiveRoute(`/contact`) && <ActiveLinkMarker />}
                     </li>
                     <li className={`flex flex-col justify-center text-[18px] mx-6 cursor-pointer font-Onest
-                        ${isActiveRoute('/how-it-works') ? 'text-[#0898A0]' : "text-black"}
+                        ${isActiveRoute('/how-it-works') ? 'text-az-teal' : "text-black"}
                         `}>
                         <Link
                             href={`/how-it-works`}
@@ -80,22 +79,20 @@ const Nav = () => {
                         {isActiveRoute(`/how-it-works`) && <ActiveLinkMarker />}
                     </li>
                 </ul>
-                <div className="hidden xl:flex justify-between flex-row gap-1">
+                <div className="hidden xl:flex justify-between flex-row">
                     <a
-                        className={`w-36 font-Onest text-[18px]text-black`}
+                        className={`w-36 font-Onest text-[18px]text-black flex items-center justify-center`}
                         href="https://pensphere.ng/login"
                     >
-                        <Button label="Login" type={"flat"} />
+                        Login
                     </a>
-                    <a className="w-36 h-10 rounded font-normal font-Onest" href="https://pensphere.ng/register">
-                        <Button label="Get Started" type={"contained"} />
-                    </a>
+                    <a className="bg-az-teal text-white w-36 h-10 rounded-full font-normal font-Onest flex items-center justify-center" href="https://pensphere.ng/register">Get Started</a>
                 </div>
             </div>
             {
                 showNav && (
-                    <div className="w-screen h-screen bg-zinc-700 fixed top-0 left-0 z-50">
-                        <div className="h-screen max-w-[300px] w-10/12 bg-white absolute right-0 top-0">
+                    <div className="w-screen h-screen bg-zinc-700 fixed top-0 left-0 z-50" onClick={() => setShowNav(false)}>
+                        <div className="h-screen max-w-[300px] w-10/12 bg-white absolute right-0 top-0" onClick={(event) => event.stopPropagation()}>
                             <button className="absolute w-fit right-5 top-5" onClick={() => setShowNav(false)}>
                                 <img src={icons.close} alt="" />
                             </button>
@@ -105,7 +102,7 @@ const Nav = () => {
                                     <ul className="flex justify-center flex-col flex-1 h-[60vh]">
                                         <li
                                             onClick={() => setShowNav(false)}
-                                            className={`flex flex-col justify-center items-start text-[18px] my-4 cursor-pointer font-Onest ${isActiveRoute('/') ? 'text-[#0898A0]' : 'text-az-black-900'}`}>
+                                            className={`flex flex-col justify-center items-start text-[18px] my-4 cursor-pointer font-Onest ${isActiveRoute('/') ? 'text-az-teal' : 'text-az-black-900'}`}>
                                             <Link
                                                 href={`/`}
                                             >
@@ -115,7 +112,7 @@ const Nav = () => {
                                         </li>
                                         <li
                                             onClick={() => setShowNav(false)}
-                                            className={`flex flex-col justify-center items-start text-[18px] my-4 cursor-pointer font-Onest ${isActiveRoute('/contact') ? 'text-[#0898A0]' : 'text-az-black-900'}`}>
+                                            className={`flex flex-col justify-center items-start text-[18px] my-4 cursor-pointer font-Onest ${isActiveRoute('/contact') ? 'text-az-teal' : 'text-az-black-900'}`}>
                                             <Link
                                                 href={`/contact`}
                                             >
@@ -125,7 +122,7 @@ const Nav = () => {
                                         </li>
                                         <li
                                             onClick={() => setShowNav(false)}
-                                            className={`flex flex-col justify-center items-start text-[18px] my-4 cursor-pointer font-Onest ${isActiveRoute('/how-it-works') ? 'text-[#0898A0]' : 'text-az-black-900'}`}>
+                                            className={`flex flex-col justify-center items-start text-[18px] my-4 cursor-pointer font-Onest ${isActiveRoute('/how-it-works') ? 'text-az-teal' : 'text-az-black-900'}`}>
                                             <Link
                                                 href={`/how-it-works`}
                                             >
@@ -135,13 +132,9 @@ const Nav = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="flex justify-between flex-row">
-                                    <a className="bg-[#0898A0] text-white w-36 h-10 rounded font-normal font-Onest" href="https://pensphere.ng/login">
-                                        <Button label="Login" type={"contained"} />
-                                    </a>
-                                    <a className="bg-[#0898A0] text-white w-36 h-10 rounded font-normal font-Onest" href="https://pensphere.ng/register">
-                                        <Button label="Get Started" type={"contained"} />
-                                    </a>
+                                <div className="flex gap-2 justify-between flex-row mb-10">
+                                    <a className=" w-[48%] font-normal text-center font-Onest border border-az-teal flex items-center justify-center" href="https://pensphere.ng/login" onClick={() => setShowNav(false)}>Login</a>
+                                    <a className="bg-az-teal border border-az-teal text-white w-36 h-10 rounded-full font-normal font-Onest flex items-center justify-center" href="https://pensphere.ng/register">Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +150,7 @@ export default Nav;
 const ActiveLinkMarker = () => {
     return (
         <div className='w-full flex flex-row justify-center items-center'>
-            <div className='rounded-full h-1 bg-[#0898A0] w-6/12' />
+            <div className='rounded-full h-1 bg-az-teal w-6/12' />
         </div>
     )
 }

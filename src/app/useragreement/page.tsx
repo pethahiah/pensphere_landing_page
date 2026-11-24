@@ -13,7 +13,7 @@ const UserAgreement = () => {
   return (
     <div className="mt-20">
       <ContentBuilder data={agreement} />
-      <ContentBuilder data={otherTerms} />
+      <ContentBuilder data={otherTerms} titleAs="h2" />
     </div>
   );
 };

@@ -42,28 +42,26 @@ export const images = {
 	salaryPayment: "https://res.cloudinary.com/dfvx7yxrc/image/upload/v1742069787/image__1_-removebg-preview_uv6c4b.png",
 };
 
+// NOTE: Reordered per new partner list. APT, CardinalStone, Parthian and
+// Citizens Pensions logos pending — add their Cloudinary URLs here once ready.
 export const PFALogos = [
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925646/zenith_eqscjy.svg",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925645/veritas_ruin4d.jpg",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925644/uba_h88qlq.png",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925643/trustfund_mod6ij.png",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925642/stanbic_yx4sir.jpg",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925640/radix_qqraxv.png",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925639/premium_mxefh1.png",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925638/pal_s0zfcq.png",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925637/oak_a3lpsa.png",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925637/nlpc_jbyosp.jpg",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925635/leadway_gjisyl.png",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925632/first_ja7rhi.jpg",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925632/fidelity_e410sy.png",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925631/fcmb_k5ltfi.png",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925631/crusader_clzz0x.png",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925628/access-arm_x2ejmq.png",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1735644281/GTPM_xlbldn.png",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1735644281/nupemco_eojgyd.jpg",
-	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1735644282/npf_liwfdn.png",
 	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1735644281/tangerine_w2nk9h.jpg",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925631/crusader_clzz0x.png",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925642/stanbic_yx4sir.jpg",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925637/nlpc_jbyosp.jpg",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925638/oak_a3lpsa.png",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925639/premium_mxefh1.png",
 	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1735644281/norrenberger_ntlhu0.png",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925635/leadway_gjisyl.png",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925631/fcmb_k5ltfi.png",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925638/pal_s0zfcq.png",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925628/access-arm_x2ejmq.png",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925643/trustfund_mod6ij.png",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925645/veritas_ruin4d.jpg",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1733925632/fidelity_e410sy.png",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1735644281/GTPM_xlbldn.png",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1735644282/npf_liwfdn.png",
+	"https://res.cloudinary.com/dfvx7yxrc/image/upload/v1735644281/nupemco_eojgyd.jpg",
 ];
 
 export const illustrations = {
@@ -209,7 +207,7 @@ export const icons = {
 
 export const documents = {
 	beneficiaries_template:
-		"https://res.cloudinary.com/dfvx7yxrc/raw/upload/v1733937676/beneficiaries-template_vj6vw1.xlsx",
+		"https://res.cloudinary.com/dfvx7yxrc/raw/upload/v1786119378/verified_schedule_template_dietwb_uh3jhg.xlsx",
 	employees_template:
 		"https://res.cloudinary.com/dfvx7yxrc/raw/upload/v1740418825/employees_s38s9a.xlsx",
 	privacy_doc:

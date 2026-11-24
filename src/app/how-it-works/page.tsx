@@ -16,40 +16,28 @@ const guides = [
     videoLink: "https://www.youtube.com/embed/leGJalHN0P0?si=j_qEOtpyRa9Sd5NS"
   },
   {
-    title: "How To Manage Your Schedules.",
-    videoLink: "https://www.youtube.com/embed/QYL84kB5I0A?si=XUIPw0S15CNQN7rr"
-  },
-  // {
-  //   title: "How To Create and validate schedules.",
-  //   videoLink: "https://www.youtube.com/embed/-OAeg1IMZOg?si=Ykbewoyc_-Oc5gLP"
-  // },
-  {
-    title: "How To Manage Your Wallet Payment Method.",
-    videoLink: "https://www.youtube.com/embed/hfWYI9z-Tzk?si=pVy95HR0vBRc2fP0"
+    title: "How to upload a pension remittance schedule.",
+    videoLink: "https://www.youtube.com/embed/qyV0vKrI2B8?si=vBESDksWaiJjS7H9"
   },
   {
-    title: "How to make a pension remittance using the 'Wallet' payment method.",
-    videoLink: "https://www.youtube.com/embed/oIhOB6CP1XI?si=JC2cmsve8buKa7jX"
+    title: "How to use the schedule validator tool.",
+    videoLink: "https://www.youtube.com/embed/f9sFxt37bZk?si=Bmf_KmgDw6qfFR5r"
   },
-  // {
-  //   title: "How to make a pension remittance using the 'Direct Debit' payment method.",
-  //   videoLink: "https://www.youtube.com/embed/v7S_gblTlw8?si=VCQ9l2gy9o6bpAD9"
-  // },
+  {
+    title: "How to pay for a pension remittance using the 'Bank Transfer' payment method.",
+    videoLink: "https://www.youtube.com/embed/vsQbyCuJo5w?si=x7sK-QEaR6o5Y53g"
+  },
   {
     title: "How to make a pension remittance using the 'Cheque Deposit' payment method.",
     videoLink: "https://www.youtube.com/embed/8bEJAtfiJuk?si=uchsuo1MnHsEHbpN"
   },
-  // {
-  //   title: "How to make a pension remittance using the 'Card' payment method.",
-  //   videoLink: "https://www.youtube.com/embed/KmS9vk6I60Q?si=J61-n2Pzy007QXjw"
-  // },
-  {
-    title: "How to manage PFC dashboard.",
-    videoLink: "https://www.youtube.com/embed/L9gnemKSJrw?si=SyQV8pJ6YMhD9ife"
-  },
   {
     title: "How to configure application settings.",
     videoLink: "https://www.youtube.com/embed/XGLTRJfExXA?si=D66JzR8roWVfkou9"
+  },
+  {
+    title: "How to manage PFC dashboard.",
+    videoLink: "https://www.youtube.com/embed/L9gnemKSJrw?si=SyQV8pJ6YMhD9ife"
   },
 ]
 const HowItWorks = () => {
@@ -79,9 +67,9 @@ const HowItWorks = () => {
       <div className="w-full p-[6%] flex flex-col md:flex-row gap-3  gap-y-20">
         <div className="flex-1 flex flex-col gap-10">
           <div className="px-5 flex flex-col items-start text-start">
-            <h1 className="text-black w-full font-bold lg:text-3xl text-[24px] font-Onest rounded-md ">
+            <h2 className="text-black w-full font-bold lg:text-3xl text-[24px] font-Onest rounded-md ">
               Simplify Your PenSphere Journey
-            </h1>
+            </h2>
             <p className="max-w-[600px] my-10">Watch these quick videos to explore our features step-by-step, and learn how to get the most out of PenSphere.</p>
             <p className="max-w-[600px]">You can also read our user manual.</p>
             <a href={documents.user_manual} target="__blank">
